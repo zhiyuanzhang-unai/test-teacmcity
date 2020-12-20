@@ -1,0 +1,30 @@
+{
+  "name": "docgen-service",
+  "version": "1.0.0",
+  "description": "Template Editor - Service",
+  "author": "",
+  "private": true,
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://git.uptake.com/projects/UN/repos/docgen-service/browse/package.json"
+  },
+  "engines": {
+    "node": "10.15.3"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "test-build-tc": "npm install --loglevel=error",
+    "test-lint-tc": "eslint \"{src,apps,libs,test}/**/*.ts\"",
+    "test-unit-tc": "npm --v"
+  },
+  "dependencies": {
+    "playwright": "^0.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "rimraf": "^3.0.2"
+  }
+}
